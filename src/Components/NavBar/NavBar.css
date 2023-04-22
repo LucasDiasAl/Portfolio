@@ -1,0 +1,89 @@
+.Nav-Bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 50px;
+  max-height: 8vh;
+  background-color: var(--darker-easy-black);
+  box-shadow: 0px 20px 8px rgba(0, 0, 0, 0.1);
+}
+
+.Img-Div {
+  align-items: center;
+}
+
+img {
+  height: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.Menu-List-Div {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.Menu-List-Div ol {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  margin: 0px;
+  counter-reset: myCounter;
+  list-style-type: none;
+}
+
+.Menu-List-Div ol li::Before {
+  counter-increment: myCounter;
+  content: counter(myCounter) ". ";
+  color: var(--aqua-blue);
+}
+
+.Menu-List-Div ol li {
+  opacity: 0;
+  animation: fade-in 0.5s ease-in-out forwards;
+  margin: 0px;
+  position: relative;
+  padding: 10px;
+}
+
+.Menu-List-Div ol li:hover {
+  color: var(--aqua-blue);
+  cursor: pointer;
+}
+
+.Curriculo-Div {
+  opacity: 0;
+  animation: fade-in 0.5s ease-in-out forwards;
+  animation-delay: 400ms;
+  background-color: var(--aqua-blue); 
+  border-radius: 3px;
+  margin:0px;
+  position: relative;
+  margin-left: 10px;
+}
+
+.Curriculo-Div p {
+  margin:0px;
+  padding: 10px 12px;
+  border: solid 1px var(--aqua-blue);
+  border-radius: 3px;
+  background-color: var(--easy-black);
+  transition: transform 0.2s ease;
+}
+
+.Curriculo-Div:hover p {
+  transform: translate(-3px, -3px);
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
