@@ -7,26 +7,47 @@
   background-color: var(--darker-easy-black);
   box-shadow: 0px 20px 8px rgba(0, 0, 0, 0.1);
 }
-
-.Img-Div {
-  align-items: center;
+.Logo-Div {
+  animation: fade-in 0.5s ease-in-out forwards;
+  animation-delay: 0ms;
+  position: relative;
+  height: 35px;
+  width: 40px;
+  min-width:38px;
+  min-height: 42px;
 }
 
-img {
-  height: 100%;
-  aspect-ratio: 1/1;
-  object-fit: cover;
+.Logo-background {
+  position: absolute;
+  z-index: 1;
+  opacity: 1;
+  fill: var(--aqua-blue);
+}
+
+.Logo {
+  position:relative;
+  z-index: 2;
+  cursor: pointer;
+  fill: var(--darker-easy-black);
+  stroke: var(--aqua-blue);
+  transition: transform 0.3s ease-in;
+}
+
+.Logo:hover {
+  transform: translate(-3px, -3px);
+}
+
+.Logo text {
+  fill: var(--aqua-blue);
 }
 
 .Menu-List-Div {
   display: flex;
-  -webkit-box-align: center;
   align-items: center;
 }
 
 .Menu-List-Div ol {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 0px;
   margin: 0px;
@@ -36,7 +57,7 @@ img {
 
 .Menu-List-Div ol li::Before {
   counter-increment: myCounter;
-  content: counter(myCounter) ". ";
+  content: counter(myCounter) ".";
   color: var(--aqua-blue);
 }
 
@@ -50,24 +71,26 @@ img {
 
 .Menu-List-Div ol li:hover {
   color: var(--aqua-blue);
+  font-size: 1.2rem;
   cursor: pointer;
 }
 
 .Curriculo-Div {
   opacity: 0;
   animation: fade-in 0.5s ease-in-out forwards;
-  animation-delay: 400ms;
+  animation-delay: 500ms;
   background-color: var(--aqua-blue); 
   border-radius: 3px;
   margin:0px;
-  position: relative;
   margin-left: 10px;
+  cursor: pointer;
 }
 
 .Curriculo-Div p {
   margin:0px;
   padding: 10px 12px;
   border: solid 1px var(--aqua-blue);
+  color: var(--aqua-blue);
   border-radius: 3px;
   background-color: var(--easy-black);
   transition: transform 0.2s ease;
