@@ -1,0 +1,76 @@
+.Apresentacao {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.ProfileImg {
+  opacity: 0;
+  box-shadow:  0 4px 15px var(--aqua-blue), 0 -2px 4px var(--aqua-blue);
+  border-radius: 20px;
+  margin-right: 10vw;
+  animation: fade-in 1s ease-in forwards;
+  animation-delay: 300ms;
+  transition: transform 0.3s ease-in;
+}
+
+.ProfileImg:hover { 
+  transform: scale(1.1);
+}
+
+.Texto-apresentacao {
+  justify-content: center;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  white-space: nowrap;
+}
+
+.Palavra-marcada {
+  opacity: 0;
+  color: var(--aqua-blue);
+  font-weight: 800;
+  font-size: 2rem;
+  animation: fade-in 0.8s ease-in-out forwards;
+  animation-delay: 600ms;
+}
+
+.About {
+  text-align: left;
+}
+
+.About h1, .About h2, .About h3, .About h4, .About h5, .About h6 {
+  opacity: 0;
+  margin: 0px;
+  font-weight: normal;
+  padding: 1.5vw;
+  max-width: fit-content;
+  animation: fade-in 1s ease-in-out forwards;
+  animation-delay: 100ms;
+}
+
+.Saudacao {
+  font-size: 1rem;
+}
+
+.Nome {
+  font-size: 1.7rem;
+}
+
+.Atribuicao {
+  font-size: 1.5rem;
+}
+
+.Sobre-mim {
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

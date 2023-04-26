@@ -3,6 +3,8 @@
 # dependencies
 /node_modules
 
+# ESLint
+eslintrc.json
 # testing
 /coverage
 

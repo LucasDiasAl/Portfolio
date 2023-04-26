@@ -1,0 +1,23 @@
+.Logo-background {
+  position: absolute;
+  z-index: 1;
+  opacity: 1;
+  fill: var(--aqua-blue);
+}
+
+.Logo {
+  position:relative;
+  z-index: 2;
+  cursor: pointer;
+  fill: var(--darker-easy-black);
+  stroke: var(--aqua-blue);
+  transition: transform 0.3s ease-in;
+}
+
+.Logo:hover {
+  transform: translate(-3px, -3px);
+}
+
+.Logo text {
+  fill: var(--aqua-blue);
+}
