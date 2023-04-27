@@ -3,8 +3,8 @@ import './SVGFooter.css';
 
 function Email () {
   return (
+    // <!-- License: MIT. Made by Lucide Contributors: https://lucide.dev/ -->
     <svg
-      className="Email-link"
       xmlns="http://www.w3.org/2000/svg"
       width="32"
       height="32"

@@ -1,8 +1,85 @@
+.Links {
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1vw;
+  animation: fade-in 0.8s ease-in forwards;
+}
+
 .Links::after {
   content: "";
-  display: block;
-  width: 1px;
-  height: 90px;
-  margin: 0px auto;
+  display: flex;
+  align-self: center;
+  min-width: 30vw;
+  height: 1px;
+  margin: 0px;
   background-color: var(--aqua-blue);
+}
+
+.Links::before {
+  content: "";
+  display: flex;
+  align-self: center;
+  min-width: 30vw;
+  height: 1px;
+  margin: 0px;
+  background-color: var(--aqua-blue);
+}
+
+
+.Github-sec {
+  display: flex;
+  align-items: center;
+}
+
+.Linkedin-sec {
+  display: flex;
+  align-items: center;
+}
+
+.Email-sec {
+  display: flex;
+  align-items: center;
+  gap: 0.5vw;
+  cursor: pointer;
+}
+
+.Email-sec p {
+  transition: transform 0.3s ease-in;
+}
+
+.Email-sec span {
+  position: absolute;
+  top: -20px;
+  right: 42vw;
+  animation: fade-up 0.3s ease-in;
+}
+
+.Email-sec:hover svg,
+.Email-sec:hover p{
+  transform: translateY(-4px);
+  stroke: var(--aqua-blue);
+  color: var(--aqua-blue);
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translate(-4px, -4px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
 }
