@@ -1,5 +1,4 @@
 import React from 'react';
-import './SVGFooter.css';
 
 function Github () {
   return (

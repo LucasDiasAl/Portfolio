@@ -2,6 +2,58 @@
   text-align: center;
 }
 
-.App main {
-  margin: 8vh 15vw;
+ main {
+  min-height: 70vh;
+  margin: 13vh 15vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+header {
+  position: fixed;
+  justify-content: center;
+  top: 0px;
+  width: 100%;
+}
+
+footer {
+  position: fixed;
+  justify-content: center;
+  bottom: 25px;
+  width: 100%;
+}
+
+.Main-component{
+  min-width: 100%;
+  position: relative;
+}
+
+.span-previous {
+  position: absolute;
+  left: 5%;
+  padding: 40vh 0px 40vh 0px;
+  display: flex;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.span-next {
+  position: absolute;
+  right: 5%;
+  padding: 40vh 0px 40vh 0px;
+  display: flex;
+  cursor: pointer;
+  z-index: 2;
+}
+
+svg {
+  stroke: var(--light-white);
+  transition: transform 0.3s ease-in;
+}
+
+svg:hover {
+  transform: translateY(-4px);
+  stroke: var(--aqua-blue);
+}
+

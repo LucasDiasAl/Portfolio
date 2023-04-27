@@ -2,6 +2,7 @@
   opacity: 0;
   display: flex;
   justify-content: center;
+  background-color: var(--darker-easy-black);
   gap: 1vw;
   animation: fade-in 0.8s ease-in forwards;
 }
@@ -50,6 +51,7 @@
 
 .Email-sec span {
   position: absolute;
+  color: var(--aqua-blue);
   top: -20px;
   right: 42vw;
   animation: fade-up 0.3s ease-in;
