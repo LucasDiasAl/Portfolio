@@ -5,6 +5,7 @@
   background-color: var(--darker-easy-black);
   gap: 1vw;
   animation: fade-in 0.8s ease-in forwards;
+  box-shadow: 0px -5px 10px 1px rgba(0, 0, 0, 0.75);
 }
 
 .Links::after {

@@ -27,7 +27,7 @@
   font-weight: bold;
   font-size: 1.2rem;
   margin: 0px;
-  animation: fade-in 0.8s ease-in-out forwards;
+  animation: fade-in 0.8s ease-in forwards;
   animation-delay: 600ms;
 }
 
@@ -35,7 +35,7 @@
   opacity: 0;
   font-weight: normal;
   margin: 0px;
-  animation: fade-in 1s ease-in-out forwards;
+  animation: fade-in 1s ease-in forwards;
   animation-delay: 100ms;
 }
 
@@ -43,7 +43,7 @@
   opacity: 0;
   font-size: 1.1rem;
   margin: 0px;
-  animation: fade-in 1s ease-in-out forwards;
+  animation: fade-in 1s ease-in forwards;
   animation-delay: 100ms;
 }
 
@@ -79,20 +79,29 @@
 }
 
 .stack h6 {
+  opacity: 0;
   margin: 0px;
+  animation: fade-in 1s ease-in forwards;
+  animation-delay: 100ms;
 }
 
 .stack span {
+  opacity: 0;
   display: flex;
   color: var(--aqua-blue);
   font-weight: bold;
   gap: 5px;
+  animation: fade-in 0.8s ease-in forwards;
+  animation-delay: 600ms;
 }
 
 .stack span::Before {
+  opacity: 0;
   content:"> ";
   font-size: 1.2rem;
   color: var(--aqua-blue);
+  animation: fade-in 0.8s ease-in forwards;
+  animation-delay: 600ms;
 }
 
 .Button-experience {
@@ -100,7 +109,7 @@
   border-radius: 5px;
   margin-bottom: 20px;
   background-color: var(--aqua-blue);
-  animation: fade-in 1s ease-in-out forwards;
+  animation: fade-in 1s ease-in forwards;
 }
 
 .Button-experience button {

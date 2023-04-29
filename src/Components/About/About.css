@@ -6,7 +6,6 @@
 
 .ProfileImg {
   opacity: 0;
-  box-shadow:  0 4px 15px var(--aqua-blue), 0 -2px 4px var(--aqua-blue);
   border-radius: 20px;
   margin-right: 10vw;
   animation: fade-in 1s ease-in forwards;

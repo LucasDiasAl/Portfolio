@@ -15,13 +15,18 @@ header {
   justify-content: center;
   top: 0px;
   width: 100%;
+  heigth: 5vh;
+  background-color: var(--darker-easy-black);
+  z-index: 1;
 }
 
 footer {
   position: fixed;
   justify-content: center;
-  bottom: 25px;
+  heigth: 5vh;
+  bottom: 0px;
   width: 100%;
+  background-color: var(--darker-easy-black);
 }
 
 .Main-component{
