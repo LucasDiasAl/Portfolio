@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 function ProjectIcon() {
   return (
@@ -10,10 +10,10 @@ function ProjectIcon() {
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
-      stroke-width="2"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      class="lucide lucide-code-2"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className="lucide lucide-code-2"
     >
       <path d="m18 16 4-4-4-4"></path>
       <path d="m6 8-4 4 4 4"></path>

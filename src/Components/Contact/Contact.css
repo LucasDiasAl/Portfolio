@@ -1,0 +1,22 @@
+.contact div{
+  margin:0px;
+  padding: 10px 12px;
+  border: solid 1px var(--aqua-blue);
+  color: var(--aqua-blue);
+  border-radius: 5px;
+  background-color: var(--easy-black);
+  transition: transform 0.3s ease-in;
+  display: inline-block;
+  position: relative;
+}
+
+.contact {
+  background-color: var(--aqua-blue);
+  border-radius: 5px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.contact:hover div{
+  transform: translate(-3px, -3px);
+}

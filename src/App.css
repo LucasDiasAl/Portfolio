@@ -4,6 +4,7 @@
 
  main {
   min-height: 70vh;
+  min-width: 70vw;
   margin: 13vh 15vw;
   display: flex;
   justify-content: center;
@@ -35,7 +36,7 @@ footer {
 }
 
 .span-previous {
-  position: absolute;
+  position: fixed;
   left: 5%;
   padding: 40vh 0px 40vh 0px;
   display: flex;
@@ -44,7 +45,7 @@ footer {
 }
 
 .span-next {
-  position: absolute;
+  position: fixed;
   right: 5%;
   padding: 40vh 0px 40vh 0px;
   display: flex;
@@ -52,13 +53,34 @@ footer {
   z-index: 2;
 }
 
-svg {
+.span-previous svg,
+.span-next  svg {
   stroke: var(--light-white);
   transition: transform 0.3s ease-in;
 }
 
-svg:hover {
+.span-previous svg:hover  , 
+.span-next svg:hover {
   transform: translateY(-4px);
   stroke: var(--aqua-blue);
 }
 
+/* Estilizando a barra de rolagem */
+::-webkit-scrollbar {
+  width: 6px; /* Largura da barra de rolagem */
+}
+
+/* Cor do fundo da barra de rolagem */
+::-webkit-scrollbar-track {
+  background-color: #00000;
+}
+
+/* Cor do preenchimento da barra de rolagem */
+::-webkit-scrollbar-thumb {
+  background-color: var(--aqua-blue);
+}
+
+/* Cor do preenchimento da barra de rolagem ao passar o mouse sobre ela */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #27B3AF;
+}

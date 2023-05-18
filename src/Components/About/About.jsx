@@ -19,21 +19,13 @@ function About () {
         </section>
         <img src={perfilImg} alt="Imagem de perfil" className="ProfileImg" />
       </section>
-      <h4 className="Sobre-mim">
-        Tive uma breve passagem pelo curso de Estatística na UnB (Universidade
-        Federal de Brasília), onde cursei por dois anos. Após uma reflexão,
-        optei por deixar o curso em busca de algo que realmente gostaria de
-        fazer. Passei a cursar Banco de Dados e Armazenamento de Big Data no
-        IESB (Instituto de Educação Superior de Brasília) e pouco depois
-        ingressei na Trybe, escola de desenvolvimento Web, onde trabalhei em
-        diversos projetos em grupo e individuais, montando aplicações que
-        aprimoraram meus conhecimentos em front-end e back-end. Meu tempo na
-        Estatística me proveu habilidades analíticas e de lógica que foram de
-        grande proveito na minha jornada na programação, enquanto a Trybe me
-        ensinou de fato a programar e a construir aplicações completas, além de
-        melhorar minhas habilidades de comunicação e controle emocional. Minha
-        história no mundo da programação ainda está no início e estou pronto
-        para o próximo desafio.
+      <h4 className="Sobre-mim">  
+        Sou um desenvolvedor com experiência em programação e estatística(Não concluído).
+        Iniciei minha jornada na área de Estatística na UnB, mas percebi
+        que meu verdadeiro interesse estava na programação. 
+        Estou cursando Banco de Dados e Armazenamento de Big Data no IESB e me juntei à Trybe,
+        onde aprimorei minhas habilidades em front-end e back-end através de projetos individuais e em grupo. 
+        Agora, estou buscando novos desafios e oportunidades para aplicar meus conhecimentos e continuar crescendo como programador.
       </h4>
     </section>
   );

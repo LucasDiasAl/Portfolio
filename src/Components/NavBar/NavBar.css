@@ -29,25 +29,28 @@
   list-style-type: none;
 }
 
-.Menu-List-Div ol li::Before {
-  counter-increment: myCounter;
-  content: counter(myCounter) "-";
-  color: var(--aqua-blue);
-}
-
 .Menu-List-Div ol li {
   display: flex;
+  gap: 2px;
   align-items: center; 
   opacity: 0;
   animation: fade-in 0.4s ease-in forwards;
   padding: 10px;
-  transition: font-size 0.3s ease-in;
+  transition: transform 0.3s ease-in;
+}
+
+.Menu-List-Div svg {
+  stroke: var(--light-white) !important;
 }
 
 .Menu-List-Div ol li:hover {
-  color: var(--aqua-blue);
-  font-size: 1.1em;
   cursor: pointer;
+}
+
+.Menu-List-Div ol li:hover svg {
+  transform: translateY(-4px) !important;
+  stroke: var(--aqua-blue) !important;
+  cursor: pointer !important;
 }
 
 .Curriculo-Div {

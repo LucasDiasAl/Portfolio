@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 function ContactIcon() {
   return (
@@ -10,10 +10,10 @@ function ContactIcon() {
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
-      stroke-width="2"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      class="lucide lucide-contact"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className="lucide lucide-contact"
     >
       <path d="M17 18a2 2 0 0 0-2-2H9a2 2 0 0 0-2 2"></path>
       <rect width="18" height="18" x="3" y="4" rx="2"></rect>

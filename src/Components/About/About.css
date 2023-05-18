@@ -11,6 +11,8 @@
   animation: fade-in 1s ease-in forwards;
   animation-delay: 300ms;
   transition: transform 0.3s ease-in;
+  padding: 10px;
+  border: 1px solid var(--aqua-blue);
 }
 
 .ProfileImg:hover { 

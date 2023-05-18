@@ -78,6 +78,16 @@
   }
 }
 
+svg {
+  stroke: var(--light-white);
+  transition: transform 0.3s ease-in;
+}
+
+svg:hover {
+  transform: translateY(-4px);
+  stroke: var(--aqua-blue);
+}
+
 @keyframes fade-up {
   0% {
     opacity: 0;
