@@ -13,9 +13,9 @@
 header {
   position: fixed;
   justify-content: center;
+  height: 7vh;
   top: 0px;
   width: 100%;
-  heigth: 5vh;
   background-color: var(--darker-easy-black);
   z-index: 1;
 }
@@ -23,7 +23,7 @@ header {
 footer {
   position: fixed;
   justify-content: center;
-  heigth: 5vh;
+  height: 7vh;
   bottom: 0px;
   width: 100%;
   background-color: var(--darker-easy-black);

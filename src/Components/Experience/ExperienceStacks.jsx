@@ -1,17 +1,52 @@
 import React from 'react';
-import stackData from '../../Data/stackData';
+import { backEndPngs, frontEndPngs, linguagensPng } from '../../Img/StacksPng';
 
-function Stacks () {
+function Stacks() {
   return (
     <section className="Experience-stacks">
-      {
-        stackData.map(({ stack, proficiencia }) => (
-          <section key={stack} className="stack">
-            <span>{stack}:</span>
-            <h6>Profieciencia: {proficiencia}</h6>
-          </section>
-        ))
-      }
+      <section>
+        <p>Linguagens:</p>
+        <section className="stack-imgs">
+          {linguagensPng.map((stack) => (
+            <img key={stack.name} src={stack.img} alt={stack.name} />
+          ))}
+        </section>
+      </section>
+
+      <section>
+        <p>Front-End:</p>
+        <section className="stack-imgs">
+          {frontEndPngs.map((stack) => (
+            <img
+              key={stack.name}
+              src={stack.img}
+              alt={stack.name}
+              onClick={() =>
+                window.open(stack.url, '_blank', 'noopener,noreferrer')
+              }
+              style={{ cursor: 'pointer' }}
+            />
+          ))}
+        </section>
+      </section>
+
+      <section>
+        <p>Back-End:</p>
+        <section className="stack-imgs">
+          {backEndPngs.map((stack) => (
+            <img
+              key={stack.name}
+              src={stack.img}
+              alt={stack.name}
+              onClick={() =>
+                window.open(stack.url, '_blank', 'noopener,noreferrer')
+              }
+              style={{ cursor: 'pointer' }}
+            />
+          ))}
+        </section>
+      </section>
+      
     </section>
   );
 }

@@ -11,6 +11,7 @@
   color: var(--aqua-blue);
   font-size: 1.5rem;
   font-weight: 600;
+  margin: 5px;
 }
 
 .Curso {
@@ -29,14 +30,6 @@
   margin: 0px;
   animation: fade-in 0.8s ease-in forwards;
   animation-delay: 600ms;
-}
-
-.Curso h3 {
-  opacity: 0;
-  font-weight: normal;
-  margin: 0px;
-  animation: fade-in 1s ease-in forwards;
-  animation-delay: 100ms;
 }
 
 .Curso p {
@@ -65,43 +58,26 @@
 
 .Experience-stacks {
   display: flex;
-  flex-wrap: wrap;
-  grid-gap: 50px;
-}
-
-.stack {
-  flex-basis: calc(100% / 5);
-  flex-grow: 1;
-  display: flex;
+  grid-gap: 30px;
   flex-direction: column;
   align-items: center;
-  font-size: 1.5rem;
 }
 
-.stack h6 {
-  opacity: 0;
-  margin: 0px;
-  animation: fade-in 1s ease-in forwards;
-  animation-delay: 100ms;
+.Experience-stacks p {
+  color: var(--aqua-blue);
+  font-weight: 600;
 }
 
-.stack span {
-  opacity: 0;
+.stack-imgs {
+  height: 8vh;
   display: flex;
-  color: var(--aqua-blue);
-  font-weight: bold;
-  gap: 5px;
-  animation: fade-in 0.8s ease-in forwards;
-  animation-delay: 600ms;
+  grid-gap: 15px;
 }
 
-.stack span::Before {
-  opacity: 0;
-  content:"> ";
-  font-size: 1.2rem;
-  color: var(--aqua-blue);
-  animation: fade-in 0.8s ease-in forwards;
-  animation-delay: 600ms;
+.Experience-stacks img{
+  width: auto;
+  height: auto;
+  aspect-ratio: 2/2;
 }
 
 .Button-experience {
