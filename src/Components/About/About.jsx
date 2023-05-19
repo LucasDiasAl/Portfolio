@@ -8,7 +8,7 @@ function About () {
       <section className="Apresentacao">
         <section className="Texto-apresentacao">
           <h1 className="Saudacao">
-            <span className="Palavra-marcada">Olá</span>,
+            <span className="Palavra-marcada">Olá,</span>
           </h1>
           <h3 className="Nome">
             Me chamo <span className="Palavra-marcada">Lucas Dias.</span>

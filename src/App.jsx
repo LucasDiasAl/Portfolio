@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import NavBar from './Components/NavBar/NavBar';
 import About from './Components/About/About';
@@ -25,6 +25,24 @@ function App () {
     const previousIndex = carouselIndex - 1;
     setCarouselIndex(previousIndex < 0 ? components.length - 1 : previousIndex);
   };
+  
+  const handleKeyPress = (event) => {
+    if (event.key === 'ArrowLeft') {
+      const prevButton = document.querySelector('.span-previous');
+      prevButton.click();
+    } else if (event.key === 'ArrowRight') {
+      const nextButton = document.querySelector('.span-next');
+      nextButton.click();
+    }
+  };
+  useEffect(() => {
+    window.addEventListener('keydown', handleKeyPress);
+
+    return () => {
+      window.removeEventListener('keydown', handleKeyPress);
+    };
+  }, []);
+
 
   return (
     <div className="App">

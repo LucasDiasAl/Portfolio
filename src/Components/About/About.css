@@ -8,7 +8,7 @@
   opacity: 0;
   border-radius: 20px;
   margin-right: 10vw;
-  animation: fade-in 1s ease-in forwards;
+  animation: fade-in 0.8s ease-in-out forwards;
   animation-delay: 300ms;
   transition: transform 0.3s ease-in;
   padding: 10px;
@@ -33,7 +33,7 @@
   font-weight: 800;
   font-size: 2rem;
   animation: fade-in 0.8s ease-in-out forwards;
-  animation-delay: 600ms;
+  animation-delay: 300ms;
 }
 
 .About {
@@ -41,13 +41,10 @@
 }
 
 .About h1, .About h2, .About h3, .About h4, .About h5, .About h6 {
-  opacity: 0;
   margin: 0px;
   font-weight: normal;
   padding: 1.5vw;
   max-width: fit-content;
-  animation: fade-in 1s ease-in-out forwards;
-  animation-delay: 100ms;
 }
 
 .Saudacao {

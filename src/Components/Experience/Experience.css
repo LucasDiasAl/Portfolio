@@ -28,16 +28,13 @@
   font-weight: bold;
   font-size: 1.2rem;
   margin: 0px;
-  animation: fade-in 0.8s ease-in forwards;
-  animation-delay: 600ms;
+  animation: fade-in 0.8s ease-in-out forwards;
+  animation-delay: 300ms;
 }
 
 .Curso p {
-  opacity: 0;
   font-size: 1.1rem;
   margin: 0px;
-  animation: fade-in 1s ease-in forwards;
-  animation-delay: 100ms;
 }
 
 .Curso::after {
@@ -78,6 +75,12 @@
   width: auto;
   height: auto;
   aspect-ratio: 2/2;
+}
+
+.Experience-stacks p{
+  opacity: 0;
+  animation: fade-in 0.8s ease-in-out forwards;
+  animation-delay: 300ms;
 }
 
 .Button-experience {
