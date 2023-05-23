@@ -11,7 +11,7 @@ function NavBar ({setCarouselIndex}) {
     setCarouselIndex(actualIndex);
   };
   const handleOnClickOpenResume = () => {
-    const pdfFile = process.env.PUBLIC_URL + '/LUCAS_DIAS DE ALENCAR_CURRICULO.pdf';
+    const pdfFile = process.env.PUBLIC_URL + '/LUCAS_DIAS DE ALENCAR_Resume.pdf';
     window.open(pdfFile, '_blank', 'noopener,noreferrer');
   };
   return (
